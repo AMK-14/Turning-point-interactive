@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
@@ -23,8 +21,6 @@ void ticTacToe(void);
 void clear(void);
 
 void waitForEnter(void);
-
-// compile with "gcc main.c helloWorldBrach.c calculatorBranch.c ticTacToeBranch.c -o interactive"
 
 int main(void)
 {
@@ -232,7 +228,7 @@ int helloWordFinal(void)
             "|----------------------------------------------------------------|\n"
             "|Type \"beginning\" to go back to the beginning of the program     |\n"
             "|                                                                |\n"
-            "|Type \"explain\" for an explanation of the program works or        |\n"
+            "|Type \"explain\" for an explanation of the program works or       |\n"
             "|                                                                |\n"
             "|Type \"replay\" to run this Hello program again                   |\n"
             "|----------------------------------------------------------------|\n");
@@ -412,7 +408,7 @@ void calculatorBasic(void)
             ); // explain this
 
             waitForEnter();
-            inputSelection[1] = 1;
+            //inputSelection[1] = 1;
         }
         else if (inputSelection[1] == 0)
         {
@@ -626,8 +622,9 @@ waitForEnter();
                 37, 37, 37, 37, 37,37 // ASCII 37 = %
             ); 
 
+            waitForEnter();
             
-            inputSelection[1] = 1;
+            //inputSelection[1] = 1;
         }
         else if (inputSelection[1] == 0)
         {
@@ -652,7 +649,7 @@ int scientificCalculatorOperatorsChoice(void)
 
         printf("                                        or\n\n");
 
-        printf("powers(5), square root(6) )\n\n");
+        printf("                                   powers(5), square root(6) )\n\n");
 
         printf("                                        or\n\n");
 
@@ -967,40 +964,41 @@ while (inputSelection[1] == 0)
             printf(
                 "This is the code\n"
                 "--------------------------------------------------------------\n"
-                "\n78|        case 7: "
-                "\n77|            printf(\"Enter your a number: \");"
-                "            scanf(\"%cf\", &num1);"
-                ""
-                "            answer = sin(num1);"
-                ""
-                "            printf(\"sin(%cf) = %clf\n\", num1, answer);"
-                "            break; "  
-                "        case 8: "
-                "            printf(\"Enter your a number: \");"
-                "            scanf(\"%cf\", &num1);"
-                ""
-                "            answer = cos(num1);"
-                ""
-                "            printf(\"cos(%cf) = %clf\", num1, answer);"
-                "            break;"    
-                "        case 9: "
-                "            printf(\"Enter your a number: \");"
-                "            scanf(\"%cf\", &num1);"
-                ""
-                "            answer = tan(num1);"
-                ""
-                "            printf(\"tan(%cf) = %clf\", num1, answer);"
-                "            break; "                                     
-                "        default:"
-                "            break;"
-                "        }"
-                "        waitForEnter();"
-                "        break;"
-                "    }"
+                "\n78 |        case 7: "
+                "\n77 |            printf(\"Enter your a number: \");"
+                "\n79 |            scanf(\"%cf\", &num1);"
+                "\n80 |"
+                "\n81 |            answer = sin(num1);"
+                "\n82 |"
+                "\n83 |            printf(\"sin(%cf) = %clf\n\", num1, answer);"
+                "\n84 |            break; "  
+                "\n85 |        case 8: "
+                "\n86 |             printf(\"Enter your a number: \");"
+                "\n87 |            scanf(\"%cf\", &num1);"
+                "\n88 |"
+                "\n89 |            answer = cos(num1);"
+                "\n90 |"
+                "\n91 |            printf(\"cos(%cf) = %clf\", num1, answer);"
+                "\n92 |            break;"    
+                "\n93 |        case 9: "
+                "\n94 |            printf(\"Enter your a number: \");"
+                "\n95 |            scanf(\"%cf\", &num1);"
+                "\n96 |"
+                "\n97 |            answer = tan(num1);"
+                "\n98 |"
+                "\n99 |            printf(\"tan(%cf) = %clf\", num1, answer);"
+                "\n100|            break; "                                     
+                "\n101|        default:"
+                "\n102|            break;"
+                "\n103|        }"
+                "\n104|        waitForEnter();"
+                "\n105|        break;"
+                "\n106|    }"
                 "\n--------------------------------------------------------------\n\n",
                 37, 37, 37, 37, 37, 37, 37, 37, 37
             );
-            inputSelection[1] = 1;
+            waitForEnter();
+            //inputSelection[1] = 1;
         }
         else if (inputSelection[1] == 0)
         {
@@ -1153,17 +1151,17 @@ void printWinner(char winner)
 {
     if (winner == PLAYER)
     {
-        printf("YOU WIN!");
+        printf("YOU WIN!\n\n");
         waitForEnter();
     }
     else if (winner == COMPUTER)
     {
-        printf("YOU LOSE!");
+        printf("YOU LOSE!\n\n");
         waitForEnter();
     }
     else
     {
-        printf("IT'S A TIE!");
+        printf("IT'S A TIE!\n\n");
         waitForEnter();
     }
 }
@@ -1284,7 +1282,7 @@ void ticTacToe(void)
             ); 
             waitForEnter();
             
-            inputSelection[1] = 1;
+            //inputSelection[1] = 1;
         }
         else if (inputSelection[1] == 0)
         {
@@ -1293,4 +1291,3 @@ void ticTacToe(void)
         }
     }
 }
-
